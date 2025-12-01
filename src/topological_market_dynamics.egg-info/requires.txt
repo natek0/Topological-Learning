@@ -1,0 +1,10 @@
+giotto-tda>=0.6.0
+scikit-learn>=1.0.0
+pandas>=2.0.0
+numpy>=1.20.0
+plotly>=5.0.0
+yfinance>=0.2.0
+
+[dev]
+pytest
+black

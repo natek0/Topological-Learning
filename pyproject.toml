@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topological-market-dynamics"
+version = "0.1.0"
+description = "Forecasting financial regime changes using Takens Embedding and Persistent Homology."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "giotto-tda>=0.6.0",   # The core TDA library
+    "scikit-learn>=1.0.0", # For the Random Forest classifier
+    "pandas>=2.0.0",
+    "numpy>=1.20.0",
+    "plotly>=5.0.0",       # For visualizing the 'shapes'
+    "yfinance>=0.2.0"      # To get real stock data (optional, but good for testing)
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black"
+]
